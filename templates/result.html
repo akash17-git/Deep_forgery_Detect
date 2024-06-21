@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>Image Tampering Detection Result</h1>
+    <p>The uploaded image is: <strong>{{ verdict }}</strong></p>
+    <p><img src="{{ url_for('uploaded_file', filename=filename) }}" alt="Uploaded Image"></p>
+    <a href="{{ url_for('upload_file') }}">Upload Another Image</a>
+</body>
+</html>
